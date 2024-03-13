@@ -10,7 +10,12 @@ body
 .sec1:hover{
     background-color: white;
 }
-
+#b1{
+    width: 10%;
+    background-color: #0c0b63;
+    color: white;
+    border-radius: 10px;
+}
 .container
 {
     display: flex;
@@ -25,7 +30,11 @@ body
     background-color: blue;
     border-radius: 15px;
 }
-
+#t1{
+    justify-content: center;
+    margin-left: 500px;
+    border: 2px solid black;
+}
 label,option{
     font-size: 30px;
     font-weight: bolder;

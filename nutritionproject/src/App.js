@@ -5,14 +5,16 @@ import { Fruits } from './components/Fruits';
 import { Nuts } from './components/Nuts';
 import Vegetables from './components/Vegetable';
 import Meats from './components/Meat';
+import Food from './components/Food';
 
 function App() {
   return (
     <div className="App">
-      <Routes>
+      {/* <Routes>
         <Route path="/" element={<Blog/>}/>
         <Route path="/fruits" element={<Fruits/>}/>
-      </Routes>
+      </Routes> */}
+      <Food/>
     </div>
   );
 }
