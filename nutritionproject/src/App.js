@@ -10,11 +10,10 @@ import Food from './components/Food';
 function App() {
   return (
     <div className="App">
-      {/* <Routes>
+      <Routes>
         <Route path="/" element={<Blog/>}/>
         <Route path="/fruits" element={<Fruits/>}/>
-      </Routes> */}
-      <Food/>
+      </Routes>
     </div>
   );
 }
