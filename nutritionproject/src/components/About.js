@@ -39,13 +39,13 @@ v    <section className="c"><h2>Who we are</h2>
     <footer>
         <h1 id="bf">Contact us</h1>
         <div className="footer">
-            <div className="foot1"><i className="fa-brands fa-facebook"></i></div>
-            <div className="foot1"><i className="fa-brands fa-instagram"></i></div>
-            <div className="foot1"><i className="fa-brands fa-twitter"></i></div>
-            <div className="foot1"><i className="fa-brands fa-youtube"></i></div>
+        <div className="foot1"> <FontAwesomeIcon icon={faFacebook} /> </div>
+<div className="foot1"> <FontAwesomeIcon icon={faInstagram} /> </div>
+<div className="foot1"> <FontAwesomeIcon icon={faTwitterSquare} /> </div>
+<div className="foot1"> <FontAwesomeIcon icon={faYoutube} /> </div>
         </div>
         <h3 id="bf">All copyright are reserved@2024</h3>
-    </footer>
+      </footer>
     </div>
   )
 }

@@ -9,6 +9,8 @@ import lamb from "../images/lamb.jpg";
 import groundChicken from "../images/Ground-Chicken.jpg";
 import tuna from "../images/Tuna.jpeg";
 import mutton from "../images/Mutton.jpg";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFacebook, faInstagram, faTwitterSquare, faYoutube } from '@fortawesome/free-brands-svg-icons';
 
 const Meats = () => {
   return (
@@ -89,10 +91,10 @@ const Meats = () => {
       <footer>
         <h1 id="bf">Contact us</h1>
         <div className="footer">
-          <div className="foot1"><i className="fa-brands fa-facebook"></i></div>
-          <div className="foot1"><i className="fa-brands fa-instagram"></i></div>
-          <div className="foot1"><i className="fa-brands fa-twitter"></i></div>
-          <div className="foot1"><i className="fa-brands fa-youtube"></i></div>
+        <div className="foot1"> <FontAwesomeIcon icon={faFacebook} /> </div>
+<div className="foot1"> <FontAwesomeIcon icon={faInstagram} /> </div>
+<div className="foot1"> <FontAwesomeIcon icon={faTwitterSquare} /> </div>
+<div className="foot1"> <FontAwesomeIcon icon={faYoutube} /> </div>
         </div>
         <h3 id="bf">All copyright are reserved@2024</h3>
       </footer>

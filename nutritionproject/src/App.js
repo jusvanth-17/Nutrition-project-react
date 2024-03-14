@@ -10,10 +10,15 @@ import Food from './components/Food';
 function App() {
   return (
     <div className="App">
-      <Routes>
+      {/* <Routes>
         <Route path="/" element={<Blog/>}/>
         <Route path="/fruits" element={<Fruits/>}/>
-      </Routes>
+        <Route path="/vegetables" element={<Vegetables/>}/>
+        <Route path="/nuts" element={<Nuts/>}/>
+        <Route path="/meat" element={<Meats/>}/>
+
+      </Routes> */}
+      <Food/>
     </div>
   );
 }

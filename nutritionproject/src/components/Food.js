@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import '../css/Food.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFacebook, faInstagram, faTwitterSquare, faYoutube } from '@fortawesome/free-brands-svg-icons';
 
 const Food = ({ name, protein, calories, fat, carbs }) => (
   <tr>
@@ -73,6 +75,7 @@ const MealTable = ({ title, foods, onAddFood }) => {
         </tbody>
       </table>
       <p>Total Calories: {totalCalories}</p>
+     
     </div>
   );
 };
@@ -115,6 +118,16 @@ const App = () => {
       <MealTable title="Add Lunch" foods={lunchFoods} onAddFood={handleAddFood} />
       <MealTable title="Add Dinner" foods={dinnerFoods} onAddFood={handleAddFood} />
       <p>Total Calories for all foods: {totalCalories}</p>
+      <footer>
+        <h1 id="bf">Contact us</h1>
+        <div className="footer">
+        <div className="foot1"> <FontAwesomeIcon icon={faFacebook} /> </div>
+         <div className="foot1"> <FontAwesomeIcon icon={faInstagram} /> </div>
+         <div className="foot1"> <FontAwesomeIcon icon={faTwitterSquare} /> </div>
+         <div className="foot1"> <FontAwesomeIcon icon={faYoutube} /> </div>
+        </div>
+        <h3 id="bf">All copyright are reserved@2024</h3>
+      </footer>
     </div>
   );
 };

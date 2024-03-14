@@ -1,6 +1,8 @@
 import React from 'react'
 import '../css/blog1.css'
 import { Link, NavLink } from 'react-router-dom'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFacebook, faInstagram, faTwitterSquare, faYoutube } from '@fortawesome/free-brands-svg-icons';
 export const Blog = () => {
   return (
     <div>
@@ -29,14 +31,14 @@ export const Blog = () => {
                 Common examples include spinach, carrots, potatoes, onions, and tomatoes.</p>
         </div>
         <div className="c4">
-            <div className="text"><Link to='./'>Vegetables</Link></div>
+            <div className="text"><Link to='/vegetables'>Vegetables</Link></div>
         </div>
     </div>
     <br></br><br></br>
 
     <div className="conb3">
         <div className="c5">
-            <div className="text"><Link to='./'>Nuts</Link></div>
+            <div className="text"><Link to='/nuts'>Nuts</Link></div>
         </div>
         <div className="c6">
                 <h1 className="bh1">Nuts</h1>
@@ -59,17 +61,18 @@ export const Blog = () => {
                 of meat influence its taste, texture, and nutritional content.</p>
         </div>
         <div className="c8">
-            <div className="text"><Link to='./'>Nuts</Link></div>
+            <div className="text"><Link to='/meat'>Meat</Link></div>
         </div>
     </div>
 <br></br>
 <footer>
     <h1 id="bf">Contact us</h1>
     <div className="footer">
-        <div className="foot1"><i className="fa-brands fa-facebook"></i></div>
-        <div className="foot1"><i className="fa-brands fa-instagram"></i></div>
-        <div className="foot1"><i className="fa-brands fa-twitter"></i></div>
-        <div className="foot1"><i className="fa-brands fa-youtube"></i></div>
+    <div className="foot1"> <FontAwesomeIcon icon={faFacebook} /> </div>
+<div className="foot1"> <FontAwesomeIcon icon={faInstagram} /> </div>
+<div className="foot1"> <FontAwesomeIcon icon={faTwitterSquare} /> </div>
+<div className="foot1"> <FontAwesomeIcon icon={faYoutube} /> </div>
+
     </div>
     <h3 id="bf">All copyright are reserved@2024</h3>
 </footer>
