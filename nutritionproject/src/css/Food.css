@@ -12,24 +12,21 @@ body
 }
 #b1{
     width: 10%;
-    background-color: #0c0b63;
+    background-color: #1aa7ec;
     color: white;
-    border-radius: 10px;
+    border-radius: 20px;
+    margin: 10px;
 }
+#s1{
+    padding-bottom: 30px;
+}
+
 .container
 {
     display: flex;
     justify-content: space-evenly   ;
 }
-.header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: sticky;
-    top: 0;
-    background-color: blue;
-    border-radius: 15px;
-}
+
 #t1{
     justify-content: center;
     margin-left: 500px;

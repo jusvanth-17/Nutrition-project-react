@@ -6,6 +6,7 @@ import { Nuts } from './components/Nuts';
 import Vegetables from './components/Vegetable';
 import Meats from './components/Meat';
 import Food from './components/Food';
+import { About } from './components/About';
 
 function App() {
   return (

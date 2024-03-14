@@ -29,7 +29,7 @@ const FoodDropdown = ({ foods, onAddFood }) => {
   };
 
   return (
-    <div>
+    <div id="s1">
       <select value={selectedFood} onChange={handleSelectChange}>
         <option value="">Select a food</option>
         {foods.map((food) => (
