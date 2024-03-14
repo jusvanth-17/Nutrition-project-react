@@ -36,7 +36,7 @@ const FoodDropdown = ({ foods, onAddFood }) => {
           </option>
         ))}
       </select>
-      <button id="b1"onClick={handleAddFood}>Add Food</button>
+      <button id="b1" onClick={handleAddFood}>Add Food</button>
     </div>
   );
 };
@@ -46,7 +46,11 @@ const MealTable = ({ title, foods, onAddFood }) => {
 
   const handleAddFood = (food) => {
     setMealFoods([...mealFoods, food]);
+    onAddFood(food); // Propagate food addition to App component
   };
+
+  // Calculate total calories for this meal table
+  const totalCalories = mealFoods.reduce((total, food) => total + food.calories, 0);
 
   return (
     <div className="table-align">
@@ -68,11 +72,19 @@ const MealTable = ({ title, foods, onAddFood }) => {
           ))}
         </tbody>
       </table>
+      <p>Total Calories: {totalCalories}</p>
     </div>
   );
 };
 
 const App = () => {
+  const [totalCalories, setTotalCalories] = useState(0);
+
+  // Update total calories when a new food is added
+  const handleAddFood = (food) => {
+    setTotalCalories(totalCalories + food.calories);
+  };
+
   const breakfastFoods = [
     { name: "Eggs", protein: 12, calories: 90, fat: 7, carbs: 1 },
     { name: "Bacon", protein: 12, calories: 140, fat: 12, carbs: 1 },
@@ -99,10 +111,10 @@ const App = () => {
 
   return (
     <div>
-      <MealTable title="Add Breakfast" foods={breakfastFoods} />
-      <MealTable title="Add Lunch" foods={lunchFoods} />
-      <MealTable title="Add Dinner" foods={dinnerFoods} />
-      {/* Add your calculate button here */}
+      <MealTable title="Add Breakfast" foods={breakfastFoods} onAddFood={handleAddFood} />
+      <MealTable title="Add Lunch" foods={lunchFoods} onAddFood={handleAddFood} />
+      <MealTable title="Add Dinner" foods={dinnerFoods} onAddFood={handleAddFood} />
+      <p>Total Calories for all foods: {totalCalories}</p>
     </div>
   );
 };
