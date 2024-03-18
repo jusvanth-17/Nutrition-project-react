@@ -14,6 +14,7 @@ export const Navbar = () => {
         <NavLink to='/product'>Blog</NavLink>
         <NavLink to='/about'>About</NavLink>
         <NavLink to='/users'>BMI</NavLink>
+        <NavLink to='/bmr'>BMR</NavLink>
         <NavLink to='/profile'>Profile</NavLink>
         {!auth.user && <NavLink to='/login'>Login</NavLink>}
         {!auth.user && <NavLink to='/signup'>Signup</NavLink>}

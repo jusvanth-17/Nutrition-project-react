@@ -24,6 +24,7 @@ import { Nuts } from './component/Nuts';
 import Meats from './component/Meat';
 // import { Food } from './component/Food';
 import Food from './component/Food';
+import CalorieCalculator from './CalorieCalculator';
 function App() {
   return (
     <div className="App">
@@ -37,7 +38,7 @@ function App() {
         </Protected>}/>
         <Route path='/*' element={<Nomatch/>}/>
         <Route path='/order' element={<Order/>}/>
-        
+        <Route path='/bmr'  element={<CalorieCalculator/>} />
         <Route path='/product' element={<Product/>}>
           <Route index element={<Most/>}/>
           <Route path = 'most' element={<Most/>}/>
