@@ -25,19 +25,19 @@ function CalorieCalculator() {
       <div>
         <label>
           Weight (kg):
-          <input type="number" value={weight} onChange={(e) => setWeight(e.target.value)} />
+          <input style={{width:'10%',marginTop:'10px'}} type="number" value={weight} onChange={(e) => setWeight(e.target.value)} />
         </label>
       </div>
       <div>
         <label>
           Height (cm):
-          <input type="number" value={height} onChange={(e) => setHeight(e.target.value)} />
+          <input style={{width:'10%',marginTop:'10px'}}  type="number" value={height} onChange={(e) => setHeight(e.target.value)} />
         </label>
       </div>
       <div>
         <label>
           Age (years):
-          <input type="number" value={age} onChange={(e) => setAge(e.target.value)} />
+          <input style={{width:'10%',marginTop:'10px'}} type="number" value={age} onChange={(e) => setAge(e.target.value)} />
         </label>
       </div>
       <div>
@@ -49,7 +49,7 @@ function CalorieCalculator() {
           </select>
         </label>
       </div>
-      <button onClick={calculateCalories}>Calculate Calories</button>
+      <button style={{width:'10%',marginTop:'5px'}}onClick={calculateCalories}>Calculate Calories</button>
       {calories !== null && <p>Basal Metabolic Rate (BMR): {calories.toFixed(2)} calories/day</p>}
     </div>
   );

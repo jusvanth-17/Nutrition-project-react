@@ -29,8 +29,13 @@
       "username": "hkhj",
       "email": "daboson387@fryshare.com",
       "password": "hggh"
+    },
+    {
+      "id": "e99a",
+      "username": "j",
+      "email": "asja@gmail.com",
+      "password": "12"
     }
   ],
-  "foods":[
-  ]
+  "foods": []
 }
