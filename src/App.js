@@ -38,7 +38,7 @@ function App() {
         </Protected>}/>
         <Route path='/*' element={<Nomatch/>}/>
         <Route path='/order' element={<Order/>}/>
-        <Route path='/bmr'  element={<CalorieCalculator/>} />
+        <Route path='/bmr'  element={<Protected><CalorieCalculator/></Protected>} />
         <Route path='/product' element={<Product/>}>
           <Route index element={<Most/>}/>
           <Route path = 'most' element={<Most/>}/>
